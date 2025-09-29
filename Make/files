@@ -1,0 +1,7 @@
+fvPatchFields = fields/fvPatchFields
+derivedFvPatchFields = $(fvPatchFields)/derived
+
+$(derivedFvPatchFields)/timeVaryingMappedFixedValue/mytimeVaryingMappedFvPatchFieldName.C
+$(derivedFvPatchFields)/timeVaryingMappedFixedValue/mytimeVaryingMappedFixedValueFvPatchFields.C
+
+LIB = $(FOAM_USER_LIBBIN)/libmyfiniteVolume
