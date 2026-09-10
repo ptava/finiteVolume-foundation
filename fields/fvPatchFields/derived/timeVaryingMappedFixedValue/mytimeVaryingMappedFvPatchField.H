@@ -116,7 +116,7 @@ class mytimeVaryingMappedFvPatchField
         const fvPatch& patch_;
 
         //- Reference to internal field
-        const DimensionedField<Type, volMesh>& internalField_;
+        const DimensionedField<Type, fvMesh>& internalField_;
 
         //- Name of the field data table, defaults to the name of the field
         word fieldTableName_;
@@ -183,7 +183,7 @@ public:
         mytimeVaryingMappedFvPatchField
         (
             const fvPatch&,
-            const DimensionedField<Type, volMesh>&,
+            const DimensionedField<Type, fvMesh>&,
             const dictionary&
         );
 
@@ -193,7 +193,7 @@ public:
         (
             const mytimeVaryingMappedFvPatchField&,
             const fvPatch&,
-            const DimensionedField<Type, volMesh>&,
+            const DimensionedField<Type, fvMesh>&,
             const fieldMapper&
         );
 

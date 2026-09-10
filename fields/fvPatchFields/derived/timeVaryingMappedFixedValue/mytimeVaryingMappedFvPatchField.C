@@ -102,7 +102,7 @@ void Foam::mytimeVaryingMappedFvPatchField<Type>::checkTable()
             new pointToPointPlanarInterpolation
             (
                 samplePoints,
-                patch_.patch().faceCentres(),
+                patch_.poly().faceCentres(),
                 perturb_,
                 nearestOnly
             )
@@ -267,7 +267,7 @@ template<class Type>
 Foam::mytimeVaryingMappedFvPatchField<Type>::mytimeVaryingMappedFvPatchField
 (
     const fvPatch& p,
-    const DimensionedField<Type, volMesh>& iF,
+    const DimensionedField<Type, fvMesh>& iF,
     const dictionary& dict
 )
 :
@@ -338,7 +338,7 @@ mytimeVaryingMappedFvPatchField
 (
     const mytimeVaryingMappedFvPatchField<Type>& ptf,
     const fvPatch& p,
-    const DimensionedField<Type, volMesh>& iF,
+    const DimensionedField<Type, fvMesh>& iF,
     const fieldMapper& mapper
 )
 :

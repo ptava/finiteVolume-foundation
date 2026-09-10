@@ -33,7 +33,7 @@ Foam::mytimeVaryingMappedFixedValueFvPatchField<Type>::
 mytimeVaryingMappedFixedValueFvPatchField
 (
     const fvPatch& p,
-    const DimensionedField<Type, volMesh>& iF,
+    const DimensionedField<Type, fvMesh>& iF,
     const dictionary& dict
 )
 :
@@ -64,7 +64,7 @@ mytimeVaryingMappedFixedValueFvPatchField
 (
     const mytimeVaryingMappedFixedValueFvPatchField<Type>& ptf,
     const fvPatch& p,
-    const DimensionedField<Type, volMesh>& iF,
+    const DimensionedField<Type, fvMesh>& iF,
     const fieldMapper& mapper
 )
 :
@@ -78,7 +78,7 @@ Foam::mytimeVaryingMappedFixedValueFvPatchField<Type>::
 mytimeVaryingMappedFixedValueFvPatchField
 (
     const mytimeVaryingMappedFixedValueFvPatchField<Type>& ptf,
-    const DimensionedField<Type, volMesh>& iF
+    const DimensionedField<Type, fvMesh>& iF
 )
 :
     fixedValueFvPatchField<Type>(ptf, iF),

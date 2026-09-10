@@ -134,7 +134,7 @@ public:
         mytimeVaryingMappedFixedValueFvPatchField
         (
             const fvPatch&,
-            const DimensionedField<Type, volMesh>&,
+            const DimensionedField<Type, fvMesh>&,
             const dictionary&
         );
 
@@ -144,7 +144,7 @@ public:
         (
             const mytimeVaryingMappedFixedValueFvPatchField<Type>&,
             const fvPatch&,
-            const DimensionedField<Type, volMesh>&,
+            const DimensionedField<Type, fvMesh>&,
             const fieldMapper&
         );
 
@@ -158,13 +158,13 @@ public:
         mytimeVaryingMappedFixedValueFvPatchField
         (
             const mytimeVaryingMappedFixedValueFvPatchField<Type>&,
-            const DimensionedField<Type, volMesh>&
+            const DimensionedField<Type, fvMesh>&
         );
 
         //- Construct and return a clone setting internal field reference
         virtual tmp<fvPatchField<Type>> clone
         (
-            const DimensionedField<Type, volMesh>& iF
+            const DimensionedField<Type, fvMesh>& iF
         ) const
         {
             return tmp<fvPatchField<Type>>
